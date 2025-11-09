@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilory;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+
+.he{
+    display: flex;
+    justify-content:  center;
+    
+}
+
+#box4{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+}
+
+#box5{
+    height: 300px;
+    width: 300px;
+    background-color: greenyellow;
+}
+
+#box6{
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+}
