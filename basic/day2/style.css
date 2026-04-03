@@ -25,6 +25,8 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 #page3{
     height: 100%;
@@ -39,4 +41,19 @@ html,body{
     height: 300px;
     width: 300px;
     background-color: crimson;
+}
+
+
+h1{
+    font-size: 60px;
+    position: relative;
+    background-color: red;
+    padding: 10px;
+}
+
+h2{
+    font-size: 60px;
+    position: relative;
+    background-color: rgb(149, 227, 15);
+    padding: 10px;
 }
