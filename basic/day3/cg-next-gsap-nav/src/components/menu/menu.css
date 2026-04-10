@@ -1,22 +1,27 @@
-.menu-bar , .menu-overlay {
+.menu-bar, .menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     z-index: 9999;
 }
 
+/* LINKS */
 .menu-bar a, .menu-open p {
     color: #fff;
-    text-decoration: none  ;
+    text-decoration: none;
     text-transform: uppercase;
+
     font-size: 14px;
     font-weight: 500;
     line-height: 100%;
+
     cursor: pointer;
 }
 
@@ -25,19 +30,16 @@
     cursor: pointer;
 }
 
+/* OVERLAY */
 .menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     padding: 2em;
     background: #ef5b45;
-    z-index: 2;
-    display: flex;  
 
+    z-index: 2;
+    display: flex;
 }
 
+/* CLOSE ICON */
 .menu-close-icon {
     flex: 2;
     display: flex;
@@ -45,14 +47,17 @@
     cursor: pointer;
 }
 
+/* MAIN COPY */
 .menu-copy {
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 2em;
+
+    padding-top: 8em; /* merged duplicate */
 }
 
+/* PREVIEW */
 .menu-preview {
     flex: 4;
     display: flex;
@@ -60,22 +65,26 @@
     align-items: flex-end;
 }
 
+/* CLOSE TEXT STYLE */
 .menu-close-icon p {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 70%;
     color: #000;
-    -webkit-text-stroke: 5px #c5fb45;
-    cursor: pointer;
 
+    -webkit-text-stroke: 1px #c5fb45; /* FIXED (5px too much) */
+    cursor: pointer;
 }
 
+/* LINK ITEM */
 .menu-link-item {
     width: max-content;
-    clip-path: 0 0 , 100% 0 , 100% 100% , 0 100%;
+
+    /* ❌ wrong syntax fixed */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.menu-link-item-holder{
+.menu-link-item-holder {
     position: relative;
 }
 
@@ -83,27 +92,21 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     color: #000;
-    -webkit-text-stroke: 5px #c5fb45;
+    -webkit-text-stroke: 1px #c5fb45;
     cursor: pointer;
-
-
 }
 
+/* INFO SECTION */
 .menu-info {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
-
-.menu-info-col{
-    flex: 1;
-    display: flex;
-
-    flex-direction: column;}
-
 
 .menu-info-col {
     flex: 1;
@@ -111,15 +114,10 @@
     flex-direction: column;
     justify-content: flex-end;
 }
- @media (max-width: 900px) {
-    .menu-close-icon  {
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .menu-close-icon {
         display: none;
     }
-    
- }
-
- .menu-copy {
-    padding-top: 8em;
- }
-
- 
+}
