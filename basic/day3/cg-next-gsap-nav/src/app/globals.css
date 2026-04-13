@@ -68,6 +68,8 @@ h1 sup {
     }
 }
 
-h1 sup {
-    font-size: 4vw;
+@media (max-width: 900px) {
+    .page-content h1 sup {
+        font-size: 4vw;
+    }
 }
